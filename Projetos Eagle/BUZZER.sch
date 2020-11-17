@@ -7963,12 +7963,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <library name="Eletroblocks Lib">
 <packages>
 <package name="3CONECTOR">
-<pad name="2" x="0" y="0" drill="0.6"/>
-<pad name="1" x="0" y="2.54" drill="0.6"/>
-<pad name="3" x="0" y="-2.54" drill="0.6"/>
-<hole x="0" y="2.54" drill="0.5"/>
-<hole x="0" y="0" drill="0.5"/>
-<hole x="0" y="-2.54" drill="0.5"/>
+<pad name="2" x="0" y="0" drill="0.75"/>
+<pad name="1" x="0" y="2.54" drill="0.75"/>
+<pad name="3" x="0" y="-2.54" drill="0.75"/>
+<hole x="0" y="2.54" drill="0.75"/>
+<hole x="0" y="0" drill="0.75"/>
+<hole x="0" y="-2.54" drill="0.75"/>
+<text x="-1.27" y="-3.81" size="0.8128" layer="21" font="fixed" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -7984,7 +7985,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CONECTOR_IN">
+<deviceset name="CONECTOR_MACHO">
 <gates>
 <gate name="G$1" symbol="CONECTOR" x="0" y="0"/>
 </gates>
@@ -8001,7 +8002,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONECTOR" prefix="J">
+<deviceset name="CONECTOR_FEMEA" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONECTOR" x="0" y="0"/>
 </gates>
@@ -8369,7 +8370,7 @@ Based on the following sources:
 <pin name="I1" x="-7.62" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="O" x="7.62" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
-<symbol name="PWRN" urn="urn:adsk.eagle:symbol:713/1" library_version="4">
+<symbol name="PWRN" urn="urn:adsk.eagle:symbol:932/2" library_version="7">
 <text x="-1.27" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VDD</text>
 <text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">VSS</text>
@@ -8378,7 +8379,7 @@ Based on the following sources:
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4011" urn="urn:adsk.eagle:component:885/5" prefix="IC" library_version="4">
+<deviceset name="4011" urn="urn:adsk.eagle:component:885/6" prefix="IC" library_version="7">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="4011" x="15.24" y="5.08" swaplevel="1"/>
@@ -8466,8 +8467,8 @@ Based on the following sources:
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="Eletroblocks Lib" deviceset="CONECTOR_IN" device="" override_package3d_urn="urn:adsk.eagle:package:22321382/3" override_package_urn="urn:adsk.eagle:footprint:22321383/1"/>
-<part name="J2" library="Eletroblocks Lib" deviceset="CONECTOR" device="" override_package3d_urn="urn:adsk.eagle:package:22308003/4" override_package_urn="urn:adsk.eagle:footprint:22308004/1"/>
+<part name="J1" library="Eletroblocks Lib" deviceset="CONECTOR_MACHO" device="" override_package3d_urn="urn:adsk.eagle:package:22321382/3" override_package_urn="urn:adsk.eagle:footprint:22321383/1" override_locally_modified="yes"/>
+<part name="J2" library="Eletroblocks Lib" deviceset="CONECTOR_FEMEA" device="" override_package3d_urn="urn:adsk.eagle:package:22308003/4" override_package_urn="urn:adsk.eagle:footprint:22308004/1" override_locally_modified="yes"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:28738/2" value="BC817"/>
