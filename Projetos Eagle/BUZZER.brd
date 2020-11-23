@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.00999999999" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.00999999999" altunitdist="mm" altunit="mm"/>
@@ -1592,7 +1592,7 @@
 <vertex x="21.952875" y="1.364459375"/>
 <vertex x="21.96633125" y="1.36031875"/>
 </polygon>
-<text x="-0.45" y="21.5" size="0.6096" layer="26" font="vector" rot="MR270">V1.0.1</text>
+<text x="-0.45" y="21.5" size="0.6096" layer="22" font="fixed" rot="MR270">V1.0.1</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
