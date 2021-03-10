@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7962,14 +7962,30 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </library>
 <library name="Eletroblocks Lib">
 <packages>
-<package name="3CONECTOR">
+<package name="FEMALE">
 <pad name="2" x="0" y="0" drill="0.75"/>
 <pad name="1" x="0" y="2.54" drill="0.75"/>
 <pad name="3" x="0" y="-2.54" drill="0.75"/>
 <hole x="0" y="2.54" drill="0.75"/>
 <hole x="0" y="0" drill="0.75"/>
 <hole x="0" y="-2.54" drill="0.75"/>
-<text x="-1.27" y="-3.81" size="0.8128" layer="21" font="fixed" rot="R90">&gt;NAME</text>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="22"/>
+<text x="-1.37" y="3.51" size="1.27" layer="22" rot="MR270">FEMALE</text>
+<text x="2.4" y="-2.6" size="1.016" layer="22" rot="R90">&gt;NAME</text>
+</package>
+<package name="MALE">
+<pad name="2" x="0" y="0" drill="0.75"/>
+<pad name="1" x="0" y="2.54" drill="0.75"/>
+<pad name="3" x="0" y="-2.54" drill="0.75"/>
+<hole x="0" y="2.54" drill="0.75"/>
+<hole x="0" y="0" drill="0.75"/>
+<hole x="0" y="-2.54" drill="0.75"/>
+<text x="-1.39" y="2.27" size="1.27" layer="22" rot="MR270">MALE</text>
+<wire x1="-1.25" y1="3.75" x2="-1.25" y2="-3.75" width="0.1524" layer="22"/>
+<wire x1="-1.25" y1="-3.75" x2="1.25" y2="-3.75" width="0.1524" layer="22"/>
+<wire x1="1.25" y1="-3.75" x2="1.25" y2="3.75" width="0.1524" layer="22"/>
+<wire x1="1.25" y1="3.75" x2="-1.25" y2="3.75" width="0.1524" layer="22"/>
+<text x="1.6" y="-2.5" size="1.016" layer="22" rot="MR90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -7990,7 +8006,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <gate name="G$1" symbol="CONECTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3CONECTOR">
+<device name="" package="MALE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8007,7 +8023,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <gate name="G$1" symbol="CONECTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3CONECTOR">
+<device name="" package="FEMALE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
